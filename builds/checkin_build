@@ -1,0 +1,24 @@
+pipeline
+{
+	agent any
+	stages
+	{
+		stage('integrate code changes')
+		{
+			steps
+			{
+				echo 'pulling master'
+				echo 'pulling dev'
+				echo 'merging dev with master'
+			}
+		}
+		stage('run unit tests')
+		{
+			steps
+			{
+				echo 'running test bach 1'
+				echo 'running test bach 2'
+			}
+		}
+	}
+}
